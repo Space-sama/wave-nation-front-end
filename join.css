@@ -1,0 +1,134 @@
+.join-main-section {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.join-text {
+
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: grey;
+}
+
+
+.fun {
+
+    font-size: 4rem;
+    font-weight: 900;
+    /* font-family: poppins, sans-serif; */
+    color: rgb(241, 21, 205);
+}
+
+
+.join-form {
+    background-color: rgb(28, 33, 37);
+    width: 50vw;
+    max-width: 50%;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+}
+
+.input-group {
+
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-group:last-child {
+    margin-bottom: 0;
+}
+
+.input-group label {
+
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+.input-group input {
+
+    outline: none;
+    background: none;
+    border: 2px solid #1762A7;
+    border-radius: 4px;
+    color: teal;
+    font-size: 17px;
+    font-weight: 700;
+    padding: .1em;
+}
+
+.input-group input:focus {
+
+    border: 1px solid wheat;
+}
+
+@media (max-width: 900px) {
+
+    .join-main-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .join-form {
+        width: 80vw;
+        max-width: inherit;
+        margin: 2rem 0;
+    } 
+}
+
+
+.join-page-circle-1 {
+
+    position: absolute;
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+    /* background-color: rgba(59, 60, 122, 0.3); */
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+
+}
+
+.join-page-circle-1::before {
+
+    content: '';
+    position: absolute;
+    transform: translateX(-20%);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(206, 236, 71, 0.3);
+
+}
+
+.join-page-circle-2 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    /* background-color: rgba(231, 98, 213, 0.3); */
+    top: 5vw;
+    left: 40vw;
+    z-index: -1;
+}
+
+.join-page-circle-2::before {
+
+    content: '';
+    position: absolute;
+    transform: translateY(-30%);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(123, 42, 230, 0.3);
+
+}
+

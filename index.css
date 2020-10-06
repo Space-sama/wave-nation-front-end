@@ -1,0 +1,98 @@
+.home-main-section {
+    
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.home-main-section .img-wrapper {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+
+}
+
+.home-main-section .lady-image {
+
+    background-image: url(images/landing-page-girl.png);
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+
+}
+
+.home-main-section .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+}
+
+
+@media (max-width: 850px) {
+    .home-main-section .img-wrapper {
+        display: none;
+    }
+
+    .home-main-section{
+        justify-content: center;
+    }
+
+}
+
+.home-page-circle-1 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgba(59, 60, 122, 0.3);
+    bottom: 5vw;
+    left: 3vw;
+    z-index: -1;
+
+
+}
+
+.home-page-circle-2 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgba(231, 98, 213, 0.3);
+    top: 5vw;
+    left: 40vw;
+    z-index: -1;
+
+
+}
+
+.home-page-circle-3 {
+    position: absolute;
+    width: 45vw;
+    height: 45vw;
+    /* border-radius: 50%; */
+    /* background-color: rgba(235, 255, 145, 0.3); */
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.home-page-circle-3::before {
+
+    content: '';
+    position: absolute;
+    transform: translate(40%, 40%);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(235, 255, 145, 0.3);
+
+}
